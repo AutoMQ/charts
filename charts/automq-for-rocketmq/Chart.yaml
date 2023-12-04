@@ -39,7 +39,6 @@ version: 0.0.4
 # It is recommended to use it with quotes.
 appVersion: "v0.0.3-alpha"
 
-
 dependencies:
   - name: mysql
     version: "9.14.1"

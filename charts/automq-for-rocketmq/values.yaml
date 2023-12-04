@@ -35,6 +35,7 @@ broker:
         enabled: true
         storageClass: ""
         size: 10Gi
+
     s3:
       endpoint: ""
       bucket: "automq-for-rocketmq"
@@ -61,10 +62,8 @@ broker:
     requests:
       cpu: 4
       memory: 8Gi
-
-  nodeSelector: { }
-
-  tolerations: [ ]
+  nodeSelector: {}
+  tolerations: []
 
 mysql:
   enabled: true
@@ -114,11 +113,7 @@ localstack:
     export AWS_DEFAULT_BUCKETS=automq-for-rocketmq
     export AWS_S3_ENDPOINT=http://localhost:4566
     export PAGER=
-    
     echo "S3 Configuration started"
-    
     aws --endpoint-url=$AWS_S3_ENDPOINT s3 mb s3://$AWS_DEFAULT_BUCKETS
     aws --endpoint-url=$AWS_S3_ENDPOINT s3 cp /tmp/localstack/test-data/ s3://$AWS_DEFAULT_BUCKETS/chart --recursive
-    
     echo "S3 Configured"
-
