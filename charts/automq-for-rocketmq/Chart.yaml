@@ -49,3 +49,10 @@ dependencies:
     version: "0.6.5"
     repository: "https://localstack.github.io/helm-charts"
     condition: localstack.enabled
+
+maintainers:
+  - name: AutoMQ
+
+icon: https://www.automq.com/img/logo/logo-text.svg
+
+home: https://www.automq.com/
