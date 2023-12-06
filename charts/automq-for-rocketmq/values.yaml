@@ -36,6 +36,9 @@ broker:
         storageClass: ""
         size: 10Gi
 
+    transactionTimeoutMillis: ""
+    transactionCheckInterval: ""
+
     s3:
       endpoint: ""
       bucket: "automq-for-rocketmq"
