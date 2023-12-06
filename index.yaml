@@ -3,6 +3,29 @@ entries:
   automq-for-rocketmq:
   - apiVersion: v2
     appVersion: v0.0.3-alpha
+    created: "2023-12-06T10:52:52.716634752Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.14.1
+    - condition: localstack.enabled
+      name: localstack
+      repository: https://localstack.github.io/helm-charts
+      version: 0.6.5
+    description: A Helm chart for automq-for-rocketmq
+    digest: 8a1726cf09912509aff543e4fe99d5f9d747a3e46782ef7ad68a073ef93a9617
+    home: https://www.automq.com/
+    icon: https://www.automq.com/img/logo/logo-text.svg
+    maintainers:
+    - name: AutoMQ
+    name: automq-for-rocketmq
+    type: application
+    urls:
+    - https://github.com/AutoMQ/charts/releases/download/automq-for-rocketmq-0.0.6/automq-for-rocketmq-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: v0.0.3-alpha
     created: "2023-12-06T10:02:18.082409522Z"
     dependencies:
     - condition: mysql.enabled
@@ -47,4 +70,4 @@ entries:
     urls:
     - https://github.com/AutoMQ/charts/releases/download/automq-for-rocketmq-0.0.4/automq-for-rocketmq-0.0.4.tgz
     version: 0.0.4
-generated: "2023-12-06T10:02:18.082425402Z"
+generated: "2023-12-06T10:52:52.716647866Z"
