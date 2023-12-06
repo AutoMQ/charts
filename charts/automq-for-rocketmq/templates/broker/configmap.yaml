@@ -45,8 +45,12 @@ data:
 
     store:
       kvPath: "/root/logs/kvstore"
-      {{- if .Values.broker.storage.transactionTimeoutMillis }}transactionTimeoutMillis:{{- .Values.broker.storage.transactionTimeoutMillis }}{{- else }}{{- end }}
-      {{- if .Values.broker.storage.transactionCheckInterval }}transactionCheckInterval:{{- .Values.broker.storage.transactionCheckInterval }}{{- else }}{{- end }}
+    {{- if .Values.broker.storage.transactionTimeoutMillis }}
+      transactionTimeoutMillis: {{ .Values.broker.storage.transactionTimeoutMillis }}
+    {{- end }}
+    {{- if .Values.broker.storage.transactionCheckInterval }}
+      transactionCheckInterval: {{ .Values.broker.storage.transactionCheckInterval }}
+    {{- end }}
 
     controller:
       recycleS3IntervalInSecs: 360
