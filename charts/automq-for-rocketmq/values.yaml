@@ -36,8 +36,8 @@ broker:
         storageClass: ""
         size: 10Gi
 
-    transactionTimeoutMillis: 100
-    transactionCheckInterval: 1000
+    transactionTimeoutMillis: ""
+    transactionCheckInterval: ""
 
     s3:
       endpoint: ""
